@@ -1,4 +1,4 @@
-"<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="g.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="navbar-brand">Image Gallery</div>
+        <div class="navbar-links">
+            <a href="g.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <button id="modeToggle" class="mode-toggle">🌙</button>
+    </nav>
     <div class="controls">
         <label for="imageCount">Images per row:</label>
         <input type="range" id="imageCountSlider" min="3" max="6" value="3">
@@ -19,8 +28,6 @@
     </div>
     <div id="gallery" class="gallery"></div>
     <div class="spinner" id="spinner"></div>
-    <button id="modeToggle" class="mode-toggle">🌙</button>
     <script src="g.js"></script>
 </body>
 </html>
-"

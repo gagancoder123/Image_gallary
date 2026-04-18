@@ -15,6 +15,41 @@ body {
   color: #1a1a1a;
 }
 
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #f4f4f4;
+  transition: background-color 0.3s;
+}
+
+.dark-mode .navbar {
+  background-color: hsl(60, 100%, 80%);
+  color: #1a1a1a;
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+}
+
+.navbar-links a {
+  color: #f4f4f4;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #007BFF;
+}
+
+.dark-mode .navbar-links a {
+  color: #1a1a1a;
+}
+
 .controls {
   margin: 20px;
   display: flex;
@@ -121,9 +156,6 @@ select {
 }
 
 .mode-toggle {
-  position: fixed;
-  top: 10px;
-  right: 10px;
   background: none;
   border: none;
   font-size: 2em;

@@ -60,9 +60,29 @@ function displayImages(images) {
         imageBox.classList.add('image-box');
         imageBox.appendChild(imgElement);
         imageBox.addEventListener('click', () => selectImage(index));
+        
+        // Add download button
+        const downloadButton = document.createElement('button');
+        downloadButton.textContent = 'Download';
+        downloadButton.classList.add('download-button');
+        downloadButton.addEventListener('click', (event) => {
+            event.stopPropagation();
+            downloadImage(image.largeImageURL);
+        });
+        imageBox.appendChild(downloadButton);
+        
         gallery.appendChild(imageBox);
     });
     lazyLoadImages();
+}
+
+function downloadImage(url) {
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'image.jpg';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 }
 
 function lazyLoadImages() {

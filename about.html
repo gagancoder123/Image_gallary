@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+            flex-direction: column;
+        }
+        .navbar {
+            width: 100%;
+            text-align: left;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0);
+            backdrop-filter: blur(10px);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .navbar a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .container {
+            width: 80%;
+            height: 80vh;
+            display: flex;
+            background: rgba(158, 104, 194, 0.945);
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            margin-top: 50px;
+        }
+        .profile-section {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+        .profile-pic {
+            width: 80%;
+            height: auto;
+            border-radius: 10px;
+            border: 4px solid #fff;
+        }
+        .about-section {
+            width: 50%;
+            padding: 40px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        h1 {
+            color: #fff;
+            font-size: 2em;
+        }
+        p {
+            color: #ddd;
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 10px 15px 0 0;
+            text-decoration: none;
+            color: #1db954;
+            font-size: 24px;
+            transition: 0.3s;
+        }
+        .social-links a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="g.html">🏠 Home</a>
+    </div>
+    <div class="container">
+        <div class="profile-section">
+            <img src="me.jpg" alt="Profile Picture" class="profile-pic">
+        </div>
+        <div class="about-section">
+            <h1>👨‍💻</h1>
+            <p>Hi! I'm a passionate software engineer specializing in web development and cybersecurity. I love solving complex problems and creating innovative solutions.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/gagan-gupta-1a52891aa" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/gagancoder123" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gk23csm2r09@nitw.ac.in" target="_blank">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
