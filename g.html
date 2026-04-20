@@ -17,6 +17,24 @@
         <button id="modeToggle" class="mode-toggle">🌙</button>
     </nav>
     <div class="controls">
+        <input type="text" id="searchInput" placeholder="Search images (e.g. nature, city)">
+        <button id="searchButton" class="control-button">Search</button>
+        <button id="clearSearchButton" class="control-button secondary">Clear</button>
+        <label for="sourceSelect">Source:</label>
+        <select id="sourceSelect">
+            <option value="all">All Sources</option>
+            <option value="pixabay">Pixabay</option>
+            <option value="pexels">Pexels</option>
+            <option value="unsplash">Unsplash</option>
+            <option value="picsum">Lorem Picsum</option>
+            <option value="wikimedia">Wikimedia</option>
+            <option value="nasa">NASA</option>
+        </select>
+        <label for="sortOrder">Sort:</label>
+        <select id="sortOrder">
+            <option value="popular">Popular</option>
+            <option value="latest">Latest</option>
+        </select>
         <label for="imageCount">Images per row:</label>
         <input type="range" id="imageCountSlider" min="3" max="6" value="3">
         <select id="imageCount">
@@ -25,9 +43,12 @@
             <option value="5">5</option>
             <option value="6">6</option>
         </select>
+        <button id="favoritesToggle" class="control-button secondary">Show Favorites</button>
     </div>
+    <p id="statusMessage" class="status-message" aria-live="polite"></p>
     <div id="gallery" class="gallery"></div>
     <div class="spinner" id="spinner"></div>
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">Top</button>
     <script src="g.js"></script>
 </body>
 </html>
